@@ -27,18 +27,7 @@ ON DELETE RESTRICT
 ON UPDATE CASCADE;
 
 -------------------------------- INDEXES
-
--- remove pk
-CREATE INDEX klantNummer ON Klant (klantNummer);
-
-CREATE INDEX bestelNummer ON Bestelling (bestelNummer);
-CREATE INDEX klantNr ON bestelling (klantNr);
-
-CREATE INDEX bestelNummer ON BestelRegel (bestelNr);
-CREATE INDEX bestelNummer ON BestelRegel (bestelNr);
-
-CREATE INDEX artikelCode on Artikel(code);
-
+--- add some
 -------------------------------------------------------------------------- C
 ALTER TABLE BestelRegel
 ADD CONSTRAINT meer_dan_nul_per_bestelling
