@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artikelen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Artikelen.xsd">
+<!--<artikelen>-->
+  <artikel streepjescode="8712100516429">
+    <merk>Calve</merk>
+    <omschrijving>Pindakaas 650g</omschrijving>
+    <prijs>3.45</prijs>
+    <btw>LAAG</btw>
+  </artikel>
+  <artikel streepjescode="8712000019273">
+    <merk>Brand</merk>
+    <omschrijving>Pilsener 6x33cl</omschrijving>
+    <prijs>5.45</prijs>
+    <btw>HOOG</btw>
+  </artikel>
+  <artikel streepjescode="67157635">
+    <merk>Heinz</merk>
+    <omschrijving>Tomatenketchup</omschrijving>
+    <prijs>1.85</prijs>
+    <btw>LAAG</btw>
+  </artikel>
+  <artikel streepjescode="8718114778440">
+    <merk>Calve</merk>
+    <omschrijving>Mayonaise licht romig</omschrijving>
+    <prijs>2.25</prijs>
+    <btw>LAAG</btw>
+  </artikel>
+  <artikel streepjescode="40414433">
+    <merk>Lucky Strike</merk>
+    <omschrijving>Original Red</omschrijving>
+    <prijs>6.95</prijs>
+    <btw>HOOG</btw>
+  </artikel>
+  <artikel streepjescode="8714341063649">
+    <merk>PostNL</merk>
+    <omschrijving>Postzegels 10st1</omschrijving>
+    <prijs>7.80</prijs>
+    <btw>GEEN</btw>
+  </artikel>
+</artikelen>

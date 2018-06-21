@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="bestellingen" type="bestellingenType" />
+    <xs:complexType name="bestellingenType">
+        <xs:sequence>
+            <xs:element name="bestelling" type="bestellingType" minOccurs="0"  maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="bestellingType">
+        <xs:sequence>
+            <xs:element name="klant" type="xs:string"/>
+            <xs:element name="product" type="productType" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="factuurbedrag" type="xs:decimal" />
+        </xs:sequence>
+        <xs:attribute name="bestelnummer" type="xs:integer" use="required" />
+        <xs:attribute name="besteldatum" type="xs:date" use="required" />
+    </xs:complexType>
+    <xs:complexType name="productType">
+        <xs:sequence>
+            <xs:element name="code" type="xs:integer" />
+            <xs:element name="aantal" type="xs:positiveInteger" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

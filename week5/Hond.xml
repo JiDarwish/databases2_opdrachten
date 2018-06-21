@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<Honden>
+    <Hond id="17">
+        <naam>Charlie</naam>
+        <ras>Labrador</ras>
+        <inentingen>
+            <ziekte>Hondenziekte</ziekte>
+            <ziekte>Kennelhoest</ziekte>
+        </inentingen>
+        <Eigenaar>
+            <voornaam>Hans</voornaam>
+            <tussenvoegsels>de</tussenvoegsels>
+            <achternaam>Wit</achternaam>
+            <telefoonnummer>06-23153309</telefoonnummer>
+        </Eigenaar>
+        
+    </Hond>
+    <Hond id="33">
+        <naam>Keet</naam>
+        <ras>Spaanse pointer</ras>
+        <inentingen>
+            <ziekte>Rabies</ziekte>
+            <ziekte>Parvo</ziekte>
+            <ziekte>Kennelhoest</ziekte>
+        </inentingen>
+        <Eigenaar>
+            <voornaam>Claar</voornaam>
+            <tussenvoegsels>van der</tussenvoegsels>
+            <achternaam>Does</achternaam>
+            <telefoonnummer>06-21157539</telefoonnummer>
+        </Eigenaar>
+    </Hond>
+</Honden>

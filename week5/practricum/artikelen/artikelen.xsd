@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="artikelen" type="ArtikelenType"/>
+    <xs:complexType name="ArtikelenType">
+        <xs:sequence>
+            <xs:element name="artikel" type="ArtikelType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ArtikelType">
+        <xs:sequence>
+            <xs:element name="merk" type="xs:string"/>
+            <xs:element name="omschrijving" type="xs:string"/>
+            <xs:element name="prijs" type="PrijsValueType"/>
+            <xs:element name="btw" type="BtwTariefType"/>
+        </xs:sequence>
+        <xs:attribute name="streepjescode" use="required" type="StreepjesCodeType"/>
+    </xs:complexType>
+    <xs:simpleType name="BtwTariefType">
+        <xs:restriction base="xs:NCName">
+            <xs:enumeration value="LAAG"/>
+            <xs:enumeration value="HOOG"/>
+            <xs:enumeration value="GEEN"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="PrijsValueType">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0"/>
+            <xs:fractionDigits value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StreepjesCodeType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{13}"/>
+            <xs:pattern value="[0-9]{8}"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

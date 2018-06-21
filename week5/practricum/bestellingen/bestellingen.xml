@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bestellingen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bestellingen.xsd">
+    <bestelling bestelnummer="10001" besteldatum="2016-12-13">
+        <klant>Willem van Buuren</klant>
+        <product>
+            <code>8712000019273</code>
+            <aantal>4</aantal>
+        </product>
+        <factuurbedrag>21.80</factuurbedrag>
+    </bestelling>
+    <bestelling bestelnummer="10803" besteldatum="2017-01-05">
+        <klant>Maxima van Buuren</klant>
+        <product>
+            <code>88718114778440</code>
+            <aantal>1</aantal>
+        </product>
+        <product>
+            <code>67157635</code>
+            <aantal>1</aantal>
+        </product>
+        <product>
+            <code>8714341063649</code>
+            <aantal>1</aantal>
+        </product>
+        <factuurbedrag>11.90</factuurbedrag>
+    </bestelling>
+</bestellingen>

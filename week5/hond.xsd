@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Honden" type="HondenType"/>
+    <xs:complexType name="HondenType">
+        <xs:sequence>
+            <xs:element name="Hond" type="Honden"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Honden">
+        <xs:all>
+            <xs:element name="naam" type="xs:string"/>
+            <xs:element name="ras" type="xs:string"/>
+            <xs:element type="inentingen" name="inentingen"/>
+            <xs:element type="Eigenaar" name="Eigenaar" />
+        </xs:all>
+        <xs:attribute name="id" use="required" type="NCName" />
+    </xs:complexType>
+    <xs:complexType name="inentingen">
+        <xs:all>
+            <xs:element name="ziekte" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="Eigenaar">
+        <xs:all>
+            <xs:element name="voornaam" type="xs:string"/>
+            <xs:element name="tussenvoegsel" type="xs:string" minOccurs="0"/>
+            <xs:element name="achternaam" type="xs:string"/>
+            <xs:element name="telefoonnummer" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+</xs:schema>
+    
